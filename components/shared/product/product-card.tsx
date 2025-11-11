@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ProductPrice from "./product-price";
-
-const ProductCard = ({ product }: { product: any }) => {
+import type { Product as ProductType } from "@/types";
+const ProductCard = ({ product }: { product: ProductType }) => {
   console.log(product);
 
   return (
