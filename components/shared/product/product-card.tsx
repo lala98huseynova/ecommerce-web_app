@@ -4,8 +4,6 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ProductPrice from "./product-price";
 import type { Product as ProductType } from "@/types";
 const ProductCard = ({ product }: { product: ProductType }) => {
-  console.log(product);
-
   return (
     <Card className="w-full max-w-sm">
       <CardHeader className="p-0 items-center">
