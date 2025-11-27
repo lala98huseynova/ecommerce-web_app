@@ -7,7 +7,7 @@ import type { NextAuthConfig } from "next-auth";
 
 export const config = {
   pages: {
-    signIn: "/signin",
+    // signIn: "/signin",
     error: "/signin",
   },
   session: {
