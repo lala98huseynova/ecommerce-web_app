@@ -5,8 +5,6 @@ import { isRedirectError } from "next/dist/client/components/redirect-error";
 import { hashSync } from "bcrypt-ts-edge";
 import { signUpFormSchema } from "../validators";
 import { prisma } from "@/db/prisma";
-import Credentials from "next-auth/providers/credentials";
-import { success } from "zod";
 import { formatError } from "../utils";
 //Sign in the user credentials
 

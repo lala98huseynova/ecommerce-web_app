@@ -13,7 +13,7 @@ import { UserIcon } from "lucide-react";
 
 const UserButton = async () => {
   const session = await auth();
-  if (!session) {
+  if (!session?.user) {
     return (
       <Button asChild>
         <Link href="/sign-in">
@@ -24,6 +24,7 @@ const UserButton = async () => {
   }
 
   const firstInitial = session.user?.name?.charAt(0).toUpperCase() ?? "U";
+  console.log(firstInitial);
   return (
     <div className="flex gap-2 items-center">
       <DropdownMenu>
